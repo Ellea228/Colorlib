@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    height: 5000px;
 }
 
 h1 h2 h3 h4 h5 h6 {
@@ -21,12 +22,13 @@ strong {
 
 #navbarScrool {
     padding: 15px;
-    top: -84px;
+    top: -100vh;
     left: 0;
     right: 0;
-    transition: cubic-bezier(0.215, 0.61, 0.355, 1) top 0.1s;
+    transition: 0.7s;
     position: fixed;
     box-shadow: 0em 0em 20px rgba(122, 122, 122, 0.76);
+    z-index: 1;
 }
 
 .navbar-brand {
@@ -87,7 +89,12 @@ strong {
     min-height: 100vh;
     background: linear-gradient(to right, rgba(238, 207, 186, 0.219), rgba(52, 114, 230, 0.192));
     position: absolute;
+    width: 50%;
     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
 }
 
 .gradient .container {

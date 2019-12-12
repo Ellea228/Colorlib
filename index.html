@@ -11,8 +11,38 @@
     <title>Hello, world!</title>
     </head>
     <body>
-        <header">
-            <nav class="navbar navbar-expand-lg navbar-light">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light " id="navbarScrool" style="background-color: white;">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Even<strong>talck.</strong></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active mr-4">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item mr-4">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item mr-4">
+                                <a class="nav-link" href="#">Speakers</a>
+                            </li>
+                            <li class="nav-item mr-4">
+                                <a class="nav-link" href="#">Schedule</a>
+                            </li>
+                            <li class="nav-item mr-4">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="nav-link">Buy ticket</a>
+                            </li>
+                                </ul>
+                            </div>
+                        </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
                 <div class="container">
                     <a class="navbar-brand" href="#">Even<strong>talck.</strong></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,13 +67,42 @@
                             </li>
                             <li class="nav-item">
                                     <a class="nav-link" href="#" id="nav-link">Buy ticket</a>
-                                </button>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+            <div class="headline">
+                <div class="container-fluid">
+                    <div class="overlay col-lg-6 col-md-6 col-sm-6 col-xs-6"></div>
+                </div>
+                </div>
+            </div>
         </header>
+        <script>
+            let prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("navbar").style.top = "35px";
+                } 
+                else {
+                    document.getElementById("navbar").style.top = "-35px";
+                }
+            prevScrollpos = currentScrollPos;
+            }
+        </script>
+        <script>
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+                if (document.body.scrollTop > 390 || document.documentElement.scrollTop > 450) {
+                    document.getElementById("navbarScrool").style.top = "0px";
+                } 
+                else {
+                    document.getElementById("navbarScrool").style.top = "-84px";
+                }
+        }
+        </script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

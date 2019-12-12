@@ -12,15 +12,21 @@ strong {
     font-weight: 900;
 }
 
-.navbar {
-    padding: 0;
-    padding-left: 20px;
-    background-color:;
-    position: absolute;
-    top: 35px;
+#navbar {
+    padding: 35px;
     left: 0;
     right: 0;
-    z-index: 3;
+    position: absolute;
+}
+
+#navbarScrool {
+    padding: 15px;
+    top: -84px;
+    left: 0;
+    right: 0;
+    transition: cubic-bezier(0.215, 0.61, 0.355, 1) top 0.1s;
+    position: fixed;
+    box-shadow: 0em 0em 20px rgba(122, 122, 122, 0.76);
 }
 
 .navbar-brand {
@@ -38,7 +44,6 @@ strong {
 }
 
 .navbar-nav .nav-link {
-    padding-left: 15px;
 }
 
 #nav-link {
@@ -54,4 +59,38 @@ strong {
     border-radius: 15px;
     transition: 0.5s;
     color: #333333;
+}
+
+.headline {
+    background-image: url(../img/bg_1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 0px;
+    background-size: cover;
+    min-height: 100vh;
+}
+.none {
+    height: 2000px;
+    background-color: violet;
+}
+
+.headline .container-fluid {
+    height: 100%;
+    padding: 0;
+}
+
+.headline .container-fluid .row {
+    height: 100%;
+}
+
+.headline .container-fluid .overlay {
+    min-height: 100vh;
+    background: linear-gradient(to right, rgba(238, 207, 186, 0.219), rgba(52, 114, 230, 0.192));
+    position: absolute;
+    top: 0;
+}
+
+.gradient .container {
+    position: relative;
+    top: 50vh;
 }

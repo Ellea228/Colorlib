@@ -12,36 +12,7 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light " id="navbarScrool" style="background-color: white;">
-                <div class="container">
-                    <a class="navbar-brand" href="#">Even<strong>talck.</strong></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active mr-4">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item mr-4">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item mr-4">
-                                <a class="nav-link" href="#">Speakers</a>
-                            </li>
-                            <li class="nav-item mr-4">
-                                <a class="nav-link" href="#">Schedule</a>
-                            </li>
-                            <li class="nav-item mr-4">
-                                <a class="nav-link" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" id="nav-link">Buy ticket</a>
-                            </li>
-                                </ul>
-                            </div>
-                        </div>
-            </nav>
+
             <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
                 <div class="container">
                     <a class="navbar-brand" href="#">Even<strong>talck.</strong></a>
@@ -50,61 +21,67 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active mr-4">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <li class="nav-item active pl-3">
+                                <a class="nav-link pl-4 pr-4" href="#">Home <span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item mr-4">
-                                <a class="nav-link" href="#">About</a>
+                            <li class="nav-item  ">
+                                <a class="nav-link pl-4 pr-4" href="#">About</a>
                             </li>
-                            <li class="nav-item mr-4">
-                                <a class="nav-link" href="#">Speakers</a>
+                            <li class="nav-item  ">
+                                <a class="nav-link pl-4 pr-4" href="#">Speakers</a>
                             </li>
-                            <li class="nav-item mr-4">
-                                <a class="nav-link" href="#">Schedule</a>
+                            <li class="nav-item  ">
+                                <a class="nav-link pl-4 pr-4" href="#">Schedule</a>
                             </li>
-                            <li class="nav-item mr-4">
-                                <a class="nav-link" href="#">Blog</a>
+                            <li class="nav-item  ">
+                                <a class="nav-link pl-4 pr-4" href="#">Blog</a>
                             </li>
-                            <li class="nav-item">
-                                    <a class="nav-link" href="#" id="nav-link">Buy ticket</a>
+                            <li class="nav-item  ">
+                                <a class="nav-link pl-4 pr-4" href="#">Contacts</a>
+                            </li>
+                            <li class="nav-item ">
+                                    <a class="nav-link pl-4 pr-4" href="#" id="nav-link">Buy ticket</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <div class="headline">
-                <div class="container-fluid">
-                    <div class="overlay col-lg-6 col-md-6 col-sm-6 col-xs-6"></div>
+            <div class="Sykaaa">
+                <div class="headline" >
+                <div class="overlay"></div> 
+            </div>
                     <!-- <div class="container">
                         <h1>Developer</h1>
                         <h2>Conference 2019</h2>
                     </div> -->
-                </div>
-                </div>
-            </div>
         </header>
         <script>
-            let prevScrollpos = window.pageYOffset;
-            window.onscroll = function() {
-                var currentScrollPos = window.pageYOffset;
-                if (prevScrollpos > currentScrollPos) {
-                    document.getElementById("navbar").style.top = "35px";
-                } 
-                else {
-                    document.getElementById("navbar").style.top = "-35px";
-                }
-            prevScrollpos = currentScrollPos;
-            }
-        </script>
-        <script>
+
+
             window.onscroll = function() {scrollFunction()};
             function scrollFunction() {
-                if (document.body.scrollTop > 390 || document.documentElement.scrollTop > 450) {
-                    document.getElementById("navbarScrool").style.top = "0px";
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                    flag = true
+                    document.getElementById("navbar").style.top = "0px";
+                    document.getElementById("navbar").style.position = 'fixed';
+                    document.getElementById("navbar").style.background = 'white';
+                    document.getElementById("navbar").style.padding = "35px"
+                    document.getElementById("navbar").style.zIndex = 2;
                 } 
-                else {
-                    document.getElementById("navbarScrool").style.top = "-100vh";
+                else if (document.body.scrollTop < 100 && document.body.scrollTop > 0 || document.documentElement.scrollTop < 100 && document.documentElement.scrollTop > 0 ) {
+                    flag = false
+                    document.getElementById("navbar").style.top = "35px";
+                    document.getElementById("navbar").style.position = 'absolute';
+                    document.getElementById("navbar").style.padding = "0px"
+                    document.getElementById("navbar").style.zIndex = 2;
+                    document.getElementById("navbar").style = "transition: all 0.5s ease";
                 }
+                else if (flag == true) {
+                    document.getElementById("navbar").style ="display: none";
+                }
+                // else if (flag = false) {
+                //     document.getElementById("navbar").style.boxShadow  =  "0em 0em 20px rgba(122, 122, 122, 0.76)";
+                // }
         }
         </script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

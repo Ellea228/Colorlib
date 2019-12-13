@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
 
+@media (max-width: 767px) {
+    #navbar {
+        z-index: 1;
+        min-height: 35px;
+        padding: 35px;
+        transition:  1s ;
+        background-color: none;
+    }
+    .overlay {
+        max-width: 100%;
+    }
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     height: 5000px;
@@ -9,43 +22,21 @@ h1 h2 h3 h4 h5 h6 {
     font-family: 'Roboto', sans-serif;
 }
 
-strong {
-    font-weight: 900;
-}
-
 #navbar {
-    padding: 35px;
+    top: 35px;
     left: 0;
     right: 0;
     position: absolute;
-}
-
-#navbarScrool {
-    padding: 15px;
-    top: -100vh;
-    left: 0;
-    right: 0;
-    transition: 0.7s;
-    position: fixed;
-    box-shadow: 0em 0em 20px rgba(122, 122, 122, 0.76);
-    z-index: 1;
 }
 
 .navbar-brand {
     font-size: 18px;
 }
 
-.navbar .container {
-
-}
-
 .fa-square {
     font-size: 15px;
     padding-left: 5px;
     color: #7dcc71;
-}
-
-.navbar-nav .nav-link {
 }
 
 #nav-link {
@@ -55,6 +46,7 @@ strong {
     border: #7075fd;
     color: white;
     transition: all 0.5s ease;
+    padding-left: 5px;
 }
 
 #nav-link:hover {
@@ -66,38 +58,16 @@ strong {
 .headline {
     background-image: url(../img/bg_1.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 50% 0px;
     background-size: cover;
     min-height: 100vh;
-}
-.none {
-    height: 2000px;
-    background-color: violet;
+    z-index: -1;
 }
 
-.headline .container-fluid {
-    height: 100%;
-    padding: 0;
-}
 
-.headline .container-fluid .row {
-    height: 100%;
-}
-
-.headline .container-fluid .overlay {
+.overlay {
     min-height: 100vh;
     background: linear-gradient(to right, rgba(238, 207, 186, 0.219), rgba(52, 114, 230, 0.192));
-    position: absolute;
-    width: 50%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
+    z-index: -2;
+    max-width: 50%;
 }
 
-.gradient .container {
-    position: relative;
-    top: 50vh;
-}

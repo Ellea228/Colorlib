@@ -46,20 +46,20 @@
                     </div>
                 </div>
             </nav>
-            <div class="Sykaaa">
-                <div class="headline" >
-                    <div class="overlay"> 
-                        <div class="row justify-content-md-center">
-                            <div class="col col-lg-2">
-                            <h1>Developer</h1>
-                            <h2>Conference 2019</h2>
-                    </div>
-            </div></div> 
+            <div class="headtitle container position-absolute d-flex align-items-center"> 
+                <div class="col">
+                    <h1>Developer</h1>
+                    <h1><strong>Conference 2019</strong></h1>
+                    <br>
+                    <p>December 21-24, 2019. Paris, Italy</p>
                 </div>
+            </div>  
             </div>
-           
-                
-            
+            <div class="headline position-absolute col-lg-12" >
+                    <div class="overlay position-absolute col-lg-6 col-md-6 col-sm-6 col-xs-6"> </div>
+                </div>
+                    
+            </div>
         </header>
         <script>
 
@@ -72,14 +72,12 @@
                     document.getElementById("navbar").style.position = 'fixed';
                     document.getElementById("navbar").style.background = 'white';
                     document.getElementById("navbar").style.padding = "35px"
-                    document.getElementById("navbar").style.zIndex = 2;
                 } 
                 else if (document.body.scrollTop < 100 && document.body.scrollTop > 0 || document.documentElement.scrollTop < 100 && document.documentElement.scrollTop > 0 ) {
                     flag = false
                     document.getElementById("navbar").style.top = "35px";
                     document.getElementById("navbar").style.position = 'absolute';
                     document.getElementById("navbar").style.padding = "0px"
-                    document.getElementById("navbar").style.zIndex = 2;
                     document.getElementById("navbar").style = "transition: all 0.5s ease";
                 }
                 else if (flag == true) {

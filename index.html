@@ -46,15 +46,15 @@
                     </div>
                 </div>
             </nav>
-            <div class="headtitle container position-absolute d-flex align-items-center"> 
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="headtitle container position-inherit d-flex align-items-center"> 
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 pl-md-3">
                     <h2>Developer</h2>
                     <h1><strong>Conference 2019</strong></h1>
                     <br>
                     <p>December 21-24, 2019. Paris, Italy</p>
                     <br>
                     <div class="container">
-                        <div class="row">
+                        <div class="row" style="min-height: 72px">
                             <div class="timersMain col-2"><div class="timers " id="days"></div><div class="timersTitle mr-4">Дни</div></div>
                             <div class="timersMain col"><div class="timers " id="hours"></div>Часы</div>
                             <div class="timersMain col"><div class="timers " id="minutes"></div>Минуты</div>
@@ -63,8 +63,8 @@
                     </div>
             </div>  
             </div>
-            <div class="headline position-absolute col-lg-12" >
-                    <div class="overlay position-absolute col-lg-6 col-md-6 col-sm-6 col-xs-6"> </div>
+            <div class="headline position-absolute col-12" >
+                    <div class="overlay position-absolute col-lg-6 col-md-12 col-sm-12 col-xs-12"> </div>
                 </div>
                     
             </div>
@@ -76,22 +76,22 @@
                         <div class="prise col-lg-3 col-md-3 ">
                             <i class="fas fa-map-marked-alt"></i>
                             <p><strong>Venue</strong></p>
-                            <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
+                            <p class="text-justify">203 Fake St. Mountain View, San Francisco, California, USA</p>
                         </div>
                         <div class=" prise col-lg-3 col-md-3 ">
                             <i class="fas fa-globe-europe"></i>
                             <p><strong>Transport</strong></p>
-                            <p>A small river named Duden flows by their place and supplies</p>
+                            <p class="text-justify">A small river named Duden flows by their place and supplies</p>
                         </div>
                         <div  class="prise col-lg-3 col-md-3 ">
                             <i class="fas fa-hotel"></i>
                             <p><strong>Hotel</strong></p>
-                            <p>A small river named Duden flows by their place and supplies</p>
+                            <p class="text-justify">A small river named Duden flows by their place and supplies</p>
                         </div>
                         <div  class="prise col-lg-3 col-md-3 ">
                             <i class="fas fa-utensils"></i>
                             <p><strong>Restaurant</strong></p>
-                            <p>A small river named Duden flows by their place and supplies</p>
+                            <p class="text-justify">A small river named Duden flows by their place and supplies</p>
                         </div>
                     </div>
                 </div>
@@ -100,34 +100,34 @@
                 <div class="container">
                     <div class="row">
                     <div class="img col-lg-6 col-md-6 hidden-sm hidden-xs"></div>
-                    <div class="fanFacts col-lg-6 col-md-12 col-sm-12 col-xs-12" >
+                    <div class="fanFacts col-lg-6 col-md-12 col-sm-12 col-xs-12 pl-lg-5" >
                         <p><small>Fun Facts</small></p>
                         <h1>Fun <strong>Facts</strong></h1>
                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
                         <div class=" container" style="padding: 0;">
                             <div class="row">
-                                <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <div class=" col-lg-6 col-md-6 col-sm-4 col-xs-6">
                                     <div class="square py-4 bg-light mb-4">
                                         <i class="fab fa-speaker-deck"></i>
                                         <h3><strong>30</strong> </h3>
                                         <p>Speakers</p>
                                     </div>
                                 </div>
-                                <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <div class=" col-lg-6 col-md-6 col-sm-4 col-xs-6">
                                     <div class="square py-4 bg-light mb-4">
                                         <i class="far fa-handshake"></i>
                                         <h3><strong>200</strong> </h3>
                                         <p>Sponsor</p>
                                     </div>
                                 </div>
-                                <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <div class=" col-lg-6 col-md-6 col-sm-4 col-xs-6">
                                     <div class="square py-4 bg-light mb-4">
                                         <i class="fas fa-chart-pie"></i>
                                         <h3><strong>2,500</strong> </h3>
                                         <p>Total Seats</p>
                                     </div>
                                 </div>
-                                <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-6">
                                     <div class="square py-4 bg-light mb-4">
                                         <i class="fas fa-bezier-curve"></i>
                                         <h3><strong>40</strong> </h3>
@@ -158,13 +158,11 @@
                     document.getElementById("navbar").style.position = 'absolute';
                     document.getElementById("navbar").style.padding = "0px"
                     document.getElementById("navbar").style = "transition: all 0.5s ease";
+                    
                 }
                 else if (flag == true) {
                     document.getElementById("navbar").style ="display: none";
                 }
-                // else if (flag = false) {
-                //     document.getElementById("navbar").style.boxShadow  =  "0em 0em 20px rgba(122, 122, 122, 0.76)";
-                // }
             }
             function countdown(dateEnd) {
                 var timer, days, hours, minutes, seconds;

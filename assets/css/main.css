@@ -4,8 +4,8 @@
 @media (max-width: 767px) {
     #navbar {
         z-index: 1;
-        min-height: 35px;
-        padding: 35px;
+        min-height: 15px;
+        padding: 15px;
         transition:  1s ;
         background-color: none;
     }
@@ -15,8 +15,13 @@
 }
 
 body {
+    overflow-x: hidden;
+    overflow-y: scroll;
     font-family: 'Comfortaa', sans-serif;
-    height: 5000px;
+}
+
+header {
+    min-height: 100vh;
 }
 
 h1 h2 h3 h4 h5 h6 {
@@ -24,7 +29,7 @@ h1 h2 h3 h4 h5 h6 {
 }
 
 #navbar {
-    top: 35px;
+    top: 15px;
     left: 0;
     right: 0;
     position: absolute;
@@ -84,6 +89,79 @@ h1 h2 h3 h4 h5 h6 {
 
 .headtitle h1{
     color: #6d85fd;
-    font-size: 50px;
+    font-size: 3rem;
 }
 
+.headtitle h2 {
+    color: #6d85fd;
+    font-size: 3rem;
+}
+
+.timers {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0;
+    color: #6d85fd;
+    border-right: 1px solid rgba(0, 0, 0, 0.637);
+}
+
+#days {
+    text-align: left;
+    padding: 0;
+}
+
+#seconds {
+    border: none;
+}
+
+.text {
+    text-align: center;
+    padding: 0;
+}
+
+.timersMain {
+    text-align: center;
+    padding: 0;
+}
+.timersMainOne {
+    text-align: center;
+    padding: 0;
+}
+
+.timersTitle {
+    text-align: left;
+}
+
+.priseList {
+    background-color: #f8f9fa;
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+.fa-map-marked-alt {
+    font-size: 50px;
+    color: #6d85fd;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.fa-globe-europe {
+    font-size: 50px;
+    color: #6d85fd;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.fa-hotel {
+    font-size: 50px;
+    color: #6d85fd;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.fa-utensils {
+    font-size: 50px;
+    color: #6d85fd;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

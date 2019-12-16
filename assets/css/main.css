@@ -5,7 +5,7 @@
     #navbar {
         z-index: 1;
         min-height: 15px;
-        padding: 15px;
+        padding: 0;
         transition:  1s ;
         background-color: none;
     }
@@ -171,14 +171,40 @@ h1 h2 h3 h4 h5 h6 {
     text-align: center;
 }
 
-.fanFacts {
-    padding-top: 2em;
-    padding-bottom: 2em;
+.fa-speaker-deck {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 25px;
+    color: #6d85fd;
 }
 
-.companyFacts {
-    background-color: #f8f9fa;
-    max-width: 20em;
+.fa-handshake {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 25px;
+    color: #6d85fd;
+}
+
+.fa-chart-pie {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 25px;
+    color: #6d85fd;
+}
+
+.fa-bezier-curve {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 25px;
+    color: #6d85fd;
+}
+
+.square {
     text-align: center;
-    padding: 15%
+    background-color: #f8f9fa;
+}
+
+.facts img {
+    background-repeat: no-repeat;
+    background-size: cover;
 }

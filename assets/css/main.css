@@ -91,6 +91,12 @@ h1 h2 h3 h4 h5 h6 {
 .headtitle h1{
     color: #6d85fd;
     font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.headtitle p {
+    padding-bottom: 2rem;
+    color: #333333;
 }
 
 .headtitle h2 {

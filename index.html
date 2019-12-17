@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets\css\main.css">
-    <title>Colorlib!</title>
+    <title>Hello, world!</title>
     </head>
     <body>
         <header>
@@ -50,7 +50,9 @@
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 pl-lg-3 pl-md-0 pl-sm-0">
                     <h2>Developer</h2>
                     <h1><strong>Conference 2019</strong></h1>
-                    <p>December 21-24, 2019. Paris, France</p>
+                    <br>
+                    <p>December 21-24, 2019. Paris, Italy</p>
+                    <br>
                     <div class="container">
                         <div class="row" style="min-height: 72px">
                             <div class="timersMain col-2"><div class="timers " id="days"></div><div class="timersTitle mr-4">Дни</div></div>
@@ -138,8 +140,56 @@
                     </div>
                 </div>
             </div>
+            <div class="c hidden-xs">
+                <div class="container">
+                    <div class="row">
+<div class="w col-12">
+    <div class="ts">
+      <input type="radio" id="c1" name="ts" checked="checked"/>
+      <label class="t" for="c1"><img src="assets\img\speaker-1.png"/></label>
+      <input type="radio" id="c2" name="ts"/>
+      <label class="t" for="c2"><img src="assets\img\speaker-2.png"/></label>
+      <input type="radio" id="c3" name="ts"/>
+      <label class="t" for="c3"><img src="assets\img\speaker-3.png"/></label>
+      <input type="radio" id="c4" name="ts"/>
+      <label class="t" for="c4"><img src="assets\img\speaker-4.png"/></label>
+      <input type="radio" id="c5" name="ts"/>
+      <label class="t" for="c5"><img src="assets\img\speaker-5.png"/></label>
+    </div>
+  </div>
+            </div>
+                </div>
+            </div>
         </main>
         <script>
+
+
+const els = document.querySelectorAll("[type='radio']");
+for (const el of els)
+  el.addEventListener("input", e => reorder(e.target, els));
+reorder(els[0], els);
+
+function reorder(targetEl, els) {
+  const nItems = els.length;
+  let processedUncheck = 0;
+  for (const el of els) {
+    const containerEl = el.nextElementSibling;
+    if (el === targetEl) {//checked radio
+      containerEl.style.setProperty("--w", "50%");
+      containerEl.style.setProperty("--l", "0");
+    }
+    else {//unchecked radios
+      containerEl.style.setProperty("--w", `${100/(nItems-1)}%`);
+      containerEl.style.setProperty("--l", `${processedUncheck * 100/(nItems-1)}%`);
+      processedUncheck += 1;
+    }
+  }
+}
+
+
+
+
+
             window.onscroll = function() {scrollFunction()};
             function scrollFunction() {
                 if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {

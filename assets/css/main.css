@@ -68,6 +68,7 @@ h1 h2 h3 h4 h5 h6 {
     padding: 0;
     z-index: -2;
     background-position-x: 69%;
+    top: 0;
 }
 
 
@@ -80,11 +81,11 @@ h1 h2 h3 h4 h5 h6 {
 
 .headtitle {
     padding: 0;
-    top: 0;
+    top: 12em;
     bottom: 0;
     left: 0;
     right: 0;
-    position: absolute;
+    position: relative;
 }
 
 .headtitle h1{
@@ -217,4 +218,12 @@ h1 h2 h3 h4 h5 h6 {
     min-height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+.hidden{
+    opacity:0;
+}
+.visible{
+    opacity:1;
 }

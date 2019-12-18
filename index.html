@@ -200,7 +200,6 @@
                             data-aos-anchor-placement="bottom-bottom"
                             data-aos-duration="1500"
                             data-aos-once="true">
-
                                 <img class="carousel-cell" src="https://colorlib.com/preview/theme/eventalk/images/speaker-3.jpg"></img>
                                 <h3>John Adams</h3>
                                 <h5>Web Developer</h5>
@@ -211,7 +210,6 @@
                             data-aos-anchor-placement="bottom-bottom"
                             data-aos-duration="1800"
                             data-aos-once="true">
-
                                 <img class="carousel-cell" src="https://colorlib.com/preview/theme/eventalk/images/speaker-2.jpg"></img>
                                 <h3>Paul George</h3>
                                 <h5>Web Developer</h5>
@@ -222,7 +220,6 @@
                             data-aos-anchor-placement="bottom-bottom"
                             data-aos-duration="1100"
                             data-aos-once="true">
-
                                 <img class="carousel-cell" src="https://colorlib.com/preview/theme/eventalk/images/speaker-1.jpg"></img>
                                 <h3>James Smith</h3>
                                 <h5>Web Developer</h5>
@@ -255,15 +252,13 @@
             </div>
         </main>
         <script>
+            // подключение анимации
             AOS.init();
-
-
-window.onload = function() {
-    document.querySelector('.preloader').classList.add("preloader-remove");
-};
-
-
-
+            //  preloader 
+            window.onload = function() {
+            document.querySelector('.preloader').classList.add("preloader-remove");
+            };
+            // система действия navbar
             window.onscroll = function() {scrollFunction()};
             function scrollFunction() {
                 if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -286,9 +281,7 @@ window.onload = function() {
                     document.getElementById("navbar").style ="display: none";
                 }
             }
-
-
-
+            // таймер
             function countdown(dateEnd) {
                 var timer, days, hours, minutes, seconds;
                 dateEnd = new Date(dateEnd);
@@ -327,7 +320,6 @@ window.onload = function() {
             function display(days, hours, minutes, seconds) {}
             }
     countdown('12/21/2019 9:0:0 AM');
-
         </script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

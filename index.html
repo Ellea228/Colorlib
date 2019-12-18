@@ -10,19 +10,27 @@
     <link rel="stylesheet" href="assets\css\main.css">
     <title>Hello, world!</title>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!-- JavaScript -->
 
     </head>
     <body>
-        <div class="preloader">
+        <div class="preloader hidden-sm hidden-xs hidden-md">
             <div class="rotate-shadows"></div>
         </div>
         <header>
             <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
             <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
                 <div class="container">
                     <a class="navbar-brand" href="#">Even<strong>talck.</strong></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" 
+                    type="button" data-toggle="collapse" 
+                    data-target="#navbarNav" 
+                    aria-controls="navbarNav" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
@@ -53,7 +61,11 @@
                 </div>
             </nav>
             <div class="headtitle container position-inherit d-flex align-items-center"> 
-                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 pl-lg-3 pl-md-0 pl-sm-0">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 pl-lg-3 pl-md-0 pl-sm-0" 
+                data-aos="fade-up" 
+                data-aos-duration="2000" 
+                data-aos-once="true">
+
                     <h2>Developer</h2>
                     <h1><strong>Conference 2019</strong></h1>
                     <br>
@@ -79,22 +91,35 @@
             <div class="priseList">
                 <div class="container">
                     <div class="row">
-                        <div class="prise col-lg-3 col-md-3 ">
+                        <div class="prise col-lg-3 col-md-3 " 
+                        data-aos="fade-down-right" 
+                        data-aos-duration="1500" 
+                        data-aos-once="true">
+                        
                             <i class="fas fa-map-marked-alt"></i>
                             <p><strong>Venue</strong></p>
                             <p class="text-justify">203 Fake St. Mountain View, San Francisco, California, USA</p>
                         </div>
-                        <div class=" prise col-lg-3 col-md-3 ">
+                        <div class=" prise col-lg-3 col-md-3 " 
+                        data-aos="fade-down" 
+                        data-aos-duration="1200" 
+                        data-aos-once="true">
                             <i class="fas fa-globe-europe"></i>
                             <p><strong>Transport</strong></p>
                             <p class="text-justify">A small river named Duden flows by their place and supplies</p>
                         </div>
-                        <div  class="prise col-lg-3 col-md-3 ">
+                        <div  class="prise col-lg-3 col-md-3 " 
+                        data-aos="fade-up" 
+                        data-aos-duration="900" 
+                        data-aos-once="true">
                             <i class="fas fa-hotel"></i>
                             <p><strong>Hotel</strong></p>
                             <p class="text-justify">A small river named Duden flows by their place and supplies</p>
                         </div>
-                        <div  class="prise col-lg-3 col-md-3 ">
+                        <div  class="prise col-lg-3 col-md-3 " 
+                        data-aos="fade-down-left" 
+                        data-aos-duration="1500" 
+                        data-aos-once="true">
                             <i class="fas fa-utensils"></i>
                             <p><strong>Restaurant</strong></p>
                             <p class="text-justify">A small river named Duden flows by their place and supplies</p>
@@ -105,35 +130,52 @@
             <div class="facts">
                 <div class="container">
                     <div class="row">
-                        <div class="img col-lg-6 col-md-6 hidden-sm hidden-xs"></div>
+                        <div class="img col-lg-6 col-md-6 hidden-sm hidden-xs">
+                    </div>
                         <div class="fanFacts col-lg-6 col-md-12 col-sm-12 col-xs-12 pl-lg-5" >
                             <p><small>Fun Facts</small></p>
                             <h1>Fun <strong>Facts</strong></h1>
                             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
                             <div class=" container" style="padding: 0;">
                                 <div class="row">
-                                    <div class=" col-lg-6 col-md-6 col-sm-4 col-xs-6">
+                                    <div class=" col-lg-6 col-md-6 col-sm-4 col-xs-6" 
+                                    data-aos="zoom-out-down" 
+                                    data-aos-duration="1500" 
+                                    data-aos-once="true" 
+                                    data-aos-offset = "400">
                                         <div class="square py-4 bg-light mb-4">
                                             <i class="fab fa-speaker-deck"></i>
                                             <h3><strong>30</strong> </h3>
                                             <p>Speakers</p>
                                         </div>
                                     </div>
-                                    <div class=" col-lg-6 col-md-6 col-sm-4 col-xs-6">
+                                    <div class=" col-lg-6 col-md-6 col-sm-4 col-xs-6" 
+                                    data-aos="zoom-out-left" 
+                                    data-aos-duration="1600" 
+                                    data-aos-once="true" 
+                                    data-aos-offset = "400">
                                         <div class="square py-4 bg-light mb-4">
                                             <i class="far fa-handshake"></i>
                                             <h3><strong>200</strong> </h3>
                                             <p>Sponsor</p>
                                         </div>
                                     </div>
-                                    <div class=" col-lg-6 col-md-6 col-sm-4 col-xs-6">
+                                    <div class=" col-lg-6 col-md-6 col-sm-4 col-xs-6" 
+                                    data-aos="zoom-in-right" 
+                                    data-aos-duration="1400" 
+                                    data-aos-once="true" 
+                                    data-aos-offset = "400">
                                         <div class="square py-4 bg-light mb-4">
                                             <i class="fas fa-chart-pie"></i>
                                             <h3><strong>2,500</strong> </h3>
                                             <p>Total Seats</p>
                                         </div>
                                     </div>
-                                    <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-6">
+                                    <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-6" 
+                                    data-aos="zoom-in-left" 
+                                    data-aos-duration="1500" 
+                                    data-aos-once="true" 
+                                    data-aos-offset = "400">
                                         <div class="square py-4 bg-light mb-4">
                                             <i class="fas fa-bezier-curve"></i>
                                             <h3><strong>40</strong> </h3>
@@ -152,28 +194,58 @@
                     <h1>Our <strong>Speakers</strong></h1>
                     <div class="row">
                         <div class="carousel" data-flickity='{ "autoPlay": 5000, "pauseAutoPlayOnHover": false, "wrapAround": true}'>
-                            <div class="carousel-list">
-                                <img class="carousel-cell" src="assets\img\speaker-1.png"></img>
+                            <div class="carousel-list" 
+                            
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom"
+                            data-aos-duration="1500"
+                            data-aos-once="true">
+
+                                <img class="carousel-cell" src="https://colorlib.com/preview/theme/eventalk/images/speaker-3.jpg"></img>
                                 <h3>John Adams</h3>
                                 <h5>Web Developer</h5>
                             </div>
-                            <div  class="carousel-list">
-                                <img class="carousel-cell" src="assets\img\speaker-2.png"></img>
+                            <div  class="carousel-list" 
+                            
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom"
+                            data-aos-duration="1800"
+                            data-aos-once="true">
+
+                                <img class="carousel-cell" src="https://colorlib.com/preview/theme/eventalk/images/speaker-2.jpg"></img>
                                 <h3>Paul George</h3>
                                 <h5>Web Developer</h5>
                             </div>                            
-                            <div class="carousel-list">
-                                <img class="carousel-cell" src="assets\img\speaker-3.png"></img>
+                            <div class="carousel-list" 
+                            
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom"
+                            data-aos-duration="1100"
+                            data-aos-once="true">
+
+                                <img class="carousel-cell" src="https://colorlib.com/preview/theme/eventalk/images/speaker-1.jpg"></img>
                                 <h3>James Smith</h3>
                                 <h5>Web Developer</h5>
-                            </div  class="carousel-list" >                            
+                            </div  class="carousel-list" 
+                            
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom"
+                            data-aos-duration="600"
+                            data-aos-once="true">
+                            
                             <div  class="carousel-list">
-                                <img class="carousel-cell" src="assets\img\speaker-4.png"></img>
+                                <img class="carousel-cell" src="https://colorlib.com/preview/theme/eventalk/images/speaker-4.jpg"></img>
                                 <h3>Angelie Crawford</h3>
                                 <h5>Web Developer</h5>
                             </div>                            
-                            <div  class="carousel-list">
-                                <img class="carousel-cell" src="assets\img\speaker-5.png"></img>
+                            <div  class="carousel-list" 
+                            
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom"
+                            data-aos-duration="1000"
+                            data-aos-once="true">
+                            
+                                <img class="carousel-cell" src="https://colorlib.com/preview/theme/eventalk/images/speaker-5.jpg"></img>
                                 <h3>Jackie Spears</h3>
                                 <h5>Web Developer</h5>
                             </div>
@@ -183,10 +255,12 @@
             </div>
         </main>
         <script>
+            AOS.init();
 
 window.onload = function() {
     document.querySelector('.preloader').classList.add("preloader-remove");
 };
+
 
 
             window.onscroll = function() {scrollFunction()};

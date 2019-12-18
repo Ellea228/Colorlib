@@ -9,10 +9,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets\css\main.css">
     <title>Hello, world!</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<!-- JavaScript -->
+
     </head>
     <body>
+        <div class="preloader">
+            <div class="rotate-shadows"></div>
+        </div>
         <header>
-
+            <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
             <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
                 <div class="container">
                     <a class="navbar-brand" href="#">Even<strong>talck.</strong></a>
@@ -140,54 +146,47 @@
                     </div>
                 </div>
             </div>
-            <div class="c hidden-xs">
+            <div class="carouselMain">
                 <div class="container">
+                    <h5>Speaker</h5>
+                    <h1>Our <strong>Speakers</strong></h1>
                     <div class="row">
-<div class="w col-12">
-    <div class="ts">
-      <input type="radio" id="c1" name="ts" checked="checked"/>
-      <label class="t" for="c1"><img src="assets\img\speaker-1.png"/></label>
-      <input type="radio" id="c2" name="ts"/>
-      <label class="t" for="c2"><img src="assets\img\speaker-2.png"/></label>
-      <input type="radio" id="c3" name="ts"/>
-      <label class="t" for="c3"><img src="assets\img\speaker-3.png"/></label>
-      <input type="radio" id="c4" name="ts"/>
-      <label class="t" for="c4"><img src="assets\img\speaker-4.png"/></label>
-      <input type="radio" id="c5" name="ts"/>
-      <label class="t" for="c5"><img src="assets\img\speaker-5.png"/></label>
-    </div>
-  </div>
-            </div>
+                        <div class="carousel" data-flickity='{ "autoPlay": 5000, "pauseAutoPlayOnHover": false, "wrapAround": true}'>
+                            <div class="carousel-list">
+                                <img class="carousel-cell" src="assets\img\speaker-1.png"></img>
+                                <h3>John Adams</h3>
+                                <h5>Web Developer</h5>
+                            </div>
+                            <div  class="carousel-list">
+                                <img class="carousel-cell" src="assets\img\speaker-2.png"></img>
+                                <h3>Paul George</h3>
+                                <h5>Web Developer</h5>
+                            </div>                            
+                            <div class="carousel-list">
+                                <img class="carousel-cell" src="assets\img\speaker-3.png"></img>
+                                <h3>James Smith</h3>
+                                <h5>Web Developer</h5>
+                            </div  class="carousel-list" >                            
+                            <div  class="carousel-list">
+                                <img class="carousel-cell" src="assets\img\speaker-4.png"></img>
+                                <h3>Angelie Crawford</h3>
+                                <h5>Web Developer</h5>
+                            </div>                            
+                            <div  class="carousel-list">
+                                <img class="carousel-cell" src="assets\img\speaker-5.png"></img>
+                                <h3>Jackie Spears</h3>
+                                <h5>Web Developer</h5>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
         <script>
 
-
-const els = document.querySelectorAll("[type='radio']");
-for (const el of els)
-  el.addEventListener("input", e => reorder(e.target, els));
-reorder(els[0], els);
-
-function reorder(targetEl, els) {
-  const nItems = els.length;
-  let processedUncheck = 0;
-  for (const el of els) {
-    const containerEl = el.nextElementSibling;
-    if (el === targetEl) {//checked radio
-      containerEl.style.setProperty("--w", "50%");
-      containerEl.style.setProperty("--l", "0");
-    }
-    else {//unchecked radios
-      containerEl.style.setProperty("--w", `${100/(nItems-1)}%`);
-      containerEl.style.setProperty("--l", `${processedUncheck * 100/(nItems-1)}%`);
-      processedUncheck += 1;
-    }
-  }
-}
-
-
-
+window.onload = function() {
+    document.querySelector('.preloader').classList.add("preloader-remove");
+};
 
 
             window.onscroll = function() {scrollFunction()};
@@ -212,6 +211,9 @@ function reorder(targetEl, els) {
                     document.getElementById("navbar").style ="display: none";
                 }
             }
+
+
+
             function countdown(dateEnd) {
                 var timer, days, hours, minutes, seconds;
                 dateEnd = new Date(dateEnd);

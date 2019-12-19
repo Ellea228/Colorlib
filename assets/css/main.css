@@ -83,6 +83,25 @@ h1 h2 h3 h4 h5 h6 {
     font-family: 'Roboto', sans-serif;
 }
 
+h5 {
+    color: #9b9b9b;
+    font-family: 'Roboto', sans-serif;
+}
+
+h6 {
+    padding-top: 0.3em;
+    color: #9b9b9b;
+    font-family: 'Roboto', sans-serif;
+}
+
+strong {
+    font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+    color: #6d85fd;
+}
+
 #navbar {
     top: 15px;
     left: 0;
@@ -334,11 +353,6 @@ h1 h2 h3 h4 h5 h6 {
     
 }
 
-.carouselMain .container h5 {
-    text-align: center;
-    font-family: 'Roboto';
-    color: #9b9b9b;
-}
 
 .carousel-list h3 {
     padding-top: 10px;
@@ -353,4 +367,79 @@ h1 h2 h3 h4 h5 h6 {
 }
 
 
+
+
+.carouselQuote {
+    line-height: 2;
+    text-align: center;
+    padding-bottom: 6em;
+}
+.carouselQuote .carousel {
+    min-height: 100%;
+}
+
+.carouselQuote img {
+    height: 8em;
+    width: 8em;
+    border-radius: 100%;
+}
+
+.carouselQuote p {
+    color: #9b9b9b;
+    padding-top: 3em;
+    position: initial;
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+
+
+
+.pricing {
+    text-align: center;
+    padding-top: 6em;
+    padding-bottom: 6em;
+    background-color: #f8f9fa;
+}
+
+.table {
+    background-color: white;
+    margin-top: 6em;
+    box-shadow: 0em 0em 12px -7px rgba(122, 122, 122, 0.76)
+}
+
+.table .textCash {
+    font-size: 60px;
+    color: #6d85fd;
+}
+.textDollar {
+    font-size: 20px;
+    color: #6d85fd;
+}
+
+.table h4 {
+    color: black;
+    font-size: 14px;
+    font-weight: bolder;
+    padding-bottom: 0.4em;
+}
+
+.table h5 {
+    color: #9b9b9b;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.table a {
+    position: absolute;
+    right: 0;
+    bottom: -1em;
+    left: 0px;
+    max-height: 4em;
+}
+
+.btn-primary {
+    background-color:#6d85fd;;
+    height: 4em;
+    width: 70%;
+}
 

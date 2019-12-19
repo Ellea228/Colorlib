@@ -1,0 +1,34 @@
+a {
+    color: black;
+}
+
+p {
+
+}
+
+.blog {
+    text-align: center;
+    padding-top: 6em;
+    padding-bottom: 6em;
+    background-color: #f8f9fa;
+}
+
+.recent {
+    line-height: 2;
+    margin-top: 6em;
+    text-align: left;
+}
+
+.recentTitle {
+    padding: 7%;
+        background-color: white;
+}
+
+.recentTitle .data {
+    color: #6d85fd;
+    font-size: 3rem;
+}
+
+.recent p {
+    color: #9b9b9b;
+}

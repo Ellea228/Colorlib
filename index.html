@@ -11,6 +11,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     </head>
     <body>
         <preloader class="preloader hidden-sm hidden-xs hidden-md">
@@ -249,6 +250,36 @@
                                 <img class="carousel-cell" src="https://colorlib.com/preview/theme/eventalk/images/speaker-5.jpg"></img>
                                 <h3>Jackie Spears</h3>
                                 <h5>Web Developer</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="event d-flex justify-content-center">
+                <div class="container">
+                    <h5 data-aos="fade-up"
+                    data-aos-once="true">Schedule</h5>
+                    <h1 data-aos="fade-up"
+                    data-aos-once="true">Event  <strong>Schedule</strong></h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="bImg d-flex flex-column justify-content-between col-3 pt-5 pb-5" id="one"
+                            data-aos="flip-left"
+                            data-aos-once="true">
+                                <h4>Day 01</h4>
+                                <small class="m-0">21 Dec. 2019</small>
+                            </div>
+                            <div class="bImg  d-flex flex-column justify-content-between col-3 pt-5 pb-5">
+                                <h4>Day 02</h4>
+                                <small class="m-0">21 Dec. 2019</small>
+                            </div>
+                            <div class="bImg  d-flex flex-column justify-content-between col-3 pt-5 pb-5">
+                                <h4>Day 03</h4>
+                                <small class="m-0">21 Dec. 2019</small>
+                            </div>
+                            <div class="bImg  d-flex flex-column justify-content-between col-3 pt-5 pb-5">
+                                <h4>Day 04</h4>
+                                <small class="m-0">21 Dec. 2019</small>
                             </div>
                         </div>
                     </div>
@@ -588,6 +619,21 @@
             </div>
         </footer>
         <script>
+            // функция изменения class'a для панели выбора
+            $(function(){
+            // после загрузки документа назначаем обработчики событий:
+                $('div.bImg').click(function(){
+                    // в обработчике делаем две вещи:
+                    // 1) находим предыдущий жмякнутый div, отменяем жмякнутость
+                    $('div.vImg').removeClass('vImg').addClass('bImg');
+                    // 2) свежежмякнутому div придаём жмякнутость
+                    $(this).removeClass('bImg').addClass('vImg');
+                });
+            });
+            // функция автоклика
+            $(document).ready(function() {
+                $('#one').trigger('click');
+            });
             // подключение анимации
             AOS.init();
             //  preloader 

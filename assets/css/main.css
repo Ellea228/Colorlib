@@ -374,6 +374,7 @@ a:hover {
     line-height: 2;
     text-align: center;
     padding-bottom: 6em;
+    padding-top: 6em;
 }
 .carouselQuote .carousel {
     min-height: 100%;
@@ -456,7 +457,6 @@ a:hover {
 line-height: 1.7;
 }
 .subcribe .form-control {
-    border: #4246fd 1px solid;
     min-height: 4em;
     border-radius: 6px 0 0 6px;
 }
@@ -466,4 +466,48 @@ line-height: 1.7;
     background-color: #4246fd;
     max-height: 4em;
     border-radius: 0 6px 6px 0;
+}
+
+
+.event {
+    text-align: center;
+    padding-top: 6em;
+    padding-bottom: 6em;
+    background-color: #f8f9fa;
+}
+
+.event .row {
+    margin-top: 4em;
+    margin-bottom: 4em;
+    background-color: white;
+}
+
+.bImg  {
+    
+}
+
+.bImg:hover {
+    color: white;
+    background-color: #595efd;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.vImg {
+    color: white;
+    background-color: #7176fd;
+    transition: 0.5s;
+}
+
+.vImg::after  {
+    content: '';
+    position: absolute;
+    left: 45%;
+    bottom: -22px;
+    border: 13px solid transparent;
+    border-top: 10px solid #7176fd;
+}
+
+#one {
+    transition: 0.2s;
 }

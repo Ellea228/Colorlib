@@ -497,6 +497,7 @@ line-height: 1.7;
     color: white;
     background-color: #7176fd;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .vImg::after  {
@@ -508,6 +509,18 @@ line-height: 1.7;
     border-top: 10px solid #7176fd;
 }
 
-#one {
-    transition: 0.2s;
+#AnimStyle_bImg {
+    transition: 0.5s;
 }
+
+.eventBlog img {
+    height: 8em;
+    width: 8em;
+    border-radius: 100%;
+}
+
+.eventBlog {
+    transition: 0.5s;
+}
+
+

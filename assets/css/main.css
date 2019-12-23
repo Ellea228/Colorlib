@@ -483,14 +483,21 @@ line-height: 1.7;
 }
 
 .bImg  {
-    
+    transition: 0.5s;
 }
 
 .bImg:hover {
     color: white;
     background-color: #595efd;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.5s;
+}
+
+.event .nav-item {
+    color: white;
+    background-color: #7176fd;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .vImg {
@@ -521,6 +528,38 @@ line-height: 1.7;
 
 .eventBlog {
     transition: 0.5s;
+}
+
+.image .imgOne{
+    background-image: url(https://colorlib.com/preview/theme/eventalk/images/image_4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 20rem;
+}
+
+.image .imgTwo{
+    background-image: url(https://colorlib.com/preview/theme/eventalk/images/image_3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 20rem;
+}
+
+.image .imgThree{
+    background-image: url(https://colorlib.com/preview/theme/eventalk/images/image_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 20rem;
+}
+
+.image .imgFour{
+    background-image: url(https://colorlib.com/preview/theme/eventalk/images/image_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 20rem;
 }
 
 

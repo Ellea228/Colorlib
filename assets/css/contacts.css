@@ -1,0 +1,36 @@
+.headline {
+    background-image: url(https://colorlib.com/preview/theme/eventalk/images/bg_2.jpg);
+    background-position-x: 78%;
+}
+.headtitle {
+    top: 55vh;
+}
+.contact {
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+.contact a {
+    font-family: 'Roboto';
+}
+
+.contact P {
+    font-family: 'Roboto';
+    color: #9b9b9b;
+    padding-bottom: 2.5em;
+}
+
+.form {
+    font-family: 'Roboto';
+    padding: 2.5em;
+    background-color: #f8f9fa;
+}
+
+.formControl {
+    height: calc(2.5em + .75rem + 2px);
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+}

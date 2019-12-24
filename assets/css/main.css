@@ -146,6 +146,14 @@ a:hover {
     background-position-x: 69%;
     top: 0;
 }
+.headtitle a {
+    color: rgb(99, 99, 99);
+    }
+    .headtitle a:hover {
+        cursor: pointer;
+        color: #7176fd;
+        text-decoration: none
+        }
 
 
 .overlay {
@@ -516,9 +524,6 @@ line-height: 1.7;
     border-top: 10px solid #7176fd;
 }
 
-#AnimStyle_bImg {
-    transition: 0.5s;
-}
 
 .eventBlog img {
     height: 8em;
@@ -530,36 +535,82 @@ line-height: 1.7;
     transition: 0.5s;
 }
 
-.image .imgOne{
-    background-image: url(https://colorlib.com/preview/theme/eventalk/images/image_4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    min-height: 20rem;
+
+.foot {
+    padding-top: 6em;
+    padding-bottom: 6em;
+    background-color: #232831;
+    color: white;
 }
 
-.image .imgTwo{
-    background-image: url(https://colorlib.com/preview/theme/eventalk/images/image_3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    min-height: 20rem;
+.foot h5 {
+    color: white;
 }
 
-.image .imgThree{
-    background-image: url(https://colorlib.com/preview/theme/eventalk/images/image_2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    min-height: 20rem;
-}
+/* .foot p {
+    font-size: 15px;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    line-height: 2;
+    color: #bdbab8;
+} */
 
-.image .imgFour{
-    background-image: url(https://colorlib.com/preview/theme/eventalk/images/image_1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    min-height: 20rem;
+.foot h6 {
+    font-size: 15px;
+    line-height: 2;
+    color: #bdbab8;
 }
 
 
+.fa-twitter-square {
+    font-size: 40px;
+    color: #bdbab8;
+    
+}
+
+.fa-facebook-square {
+    font-size: 40px;
+    color: #bdbab8;
+}
+
+.fa-instagram {
+    font-size: 40px;
+    color: #bdbab8;
+}
+
+.asfasf {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.foot .title {
+    max-height: ;
+    font-size: 15px;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    line-height: 2;
+    color: #bdbab8;
+}
+
+.foot .title a {
+    cursor: pointer;
+    padding-bottom: 1rem;
+    color: #7b7e83;
+}
+
+
+.fa-map-marker-alt {
+    font-size: 20px;
+}
+
+.fa-phone-alt {
+    font-size: 20px;
+}
+
+.fa-envelope {
+    font-size: 20px;
+}
+
+.footText {
+    padding-bottom: 0.7rem;
+}

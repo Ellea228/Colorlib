@@ -299,7 +299,7 @@
                 $('#nav-home-tab').trigger('click');
             });
             // подключение анимации
-            AOS.init();
+            AOS.init({disable: 'mobile'});
             //  preloader 
             window.onload = function() {
             document.querySelector('.preloader').classList.add("preloader-remove");
